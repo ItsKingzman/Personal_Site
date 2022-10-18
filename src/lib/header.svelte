@@ -6,7 +6,7 @@
 <header class="flex justify-between h-10 bg-black">
 	<div class="flex items-center justify-between w-[115px] h-5 pl-2 mt-2">
 		<a href="/">
-			<span class="text-2xl text-yellow-50">TK&nbsp;&#8592;</span>
+			<span class="text-2xl text-yellow-50">CK&nbsp;&#8592;</span>
 		</a>
 		<!-- Light/Dark Mode toggle -->
 		{#if $shell.visual_mode === "dark"}

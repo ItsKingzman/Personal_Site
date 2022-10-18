@@ -7,7 +7,7 @@
 				<h1
 					class="-mt-2 font-bold text-transparent bg-clip-text bg-gradient-to-br from-gray-600 to-white text-8xl"
 				>
-					TK
+					CK
 				</h1>
 			</div>
 			<div class="absolute w-full h-full bg-conic-gradient filter blur-xl" />
