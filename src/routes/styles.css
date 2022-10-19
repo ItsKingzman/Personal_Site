@@ -45,7 +45,7 @@ a {
 	text-decoration: none;
 }
 
-li > :first-child {
+li:first-child{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -62,7 +62,7 @@ li > :first-child {
 		border-radius: 10px;
 	  }
 
-	  li > :first-child:before {
+	  li:first-child:before {
 		content: '';
 		background: linear-gradient(
 		  45deg,
@@ -90,19 +90,19 @@ li > :first-child {
 		border-radius: 10px;
 	  }
 	  
-	  li > :first-child:active {
+	  li:first-child:active {
 		color: #000;
 	  }
 	  
-	  li > :first-child:active:after {
+	  li:first-child:active:after {
 		background: transparent;
 	  }
 	  
-	  li > :first-child:hover:before {
+	  li:first-child:hover:before {
 		opacity: 1;
 	  }
 	  
-	  li > :first-child:after {
+	  li:first-child:after {
 		z-index: -1;
 		content: '';
 		position: absolute;
