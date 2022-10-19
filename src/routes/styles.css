@@ -45,7 +45,7 @@ a {
 	text-decoration: none;
 }
 
-ul > :first-child {
+li > :first-child {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -62,7 +62,7 @@ ul > :first-child {
 		border-radius: 10px;
 	  }
 
-	  ul > :first-child:before {
+	  li > :first-child:before {
 		content: '';
 		background: linear-gradient(
 		  45deg,
@@ -90,19 +90,19 @@ ul > :first-child {
 		border-radius: 10px;
 	  }
 	  
-	  ul > :first-child:active {
+	  li > :first-child:active {
 		color: #000;
 	  }
 	  
-	  ul > :first-child:active:after {
+	  li > :first-child:active:after {
 		background: transparent;
 	  }
 	  
-	  ul > :first-child:hover:before {
+	  li > :first-child:hover:before {
 		opacity: 1;
 	  }
 	  
-	  ul > :first-child:after {
+	  li > :first-child:after {
 		z-index: -1;
 		content: '';
 		position: absolute;
