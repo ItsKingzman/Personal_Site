@@ -45,14 +45,14 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
-ul li a {
+a:first-child {
 	background: linear-gradient(to right, #FDD30E, #FFA51E, #EF2732, #6B2136, #1E1C1F, #1C1A1D, #19181D, #2E283E, #513C74, #0255A7, #006FBA, #00B7D7, #9CD9E8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  }
+
+a:hover {
+	text-decoration: underline;
 }
 
 h1 {
