@@ -38,25 +38,7 @@
 	animation: animatedgradient 3s ease alternate infinite;
 	background-size: 300% 300%;
 	-webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-}
-.gradient-border:after {
-	content: '';
-	background: linear-gradient(
-		60deg,
-		#f79533,
-		#f37055,
-		#ef4e7b,
-		#a166ab,
-		#5073b8,
-		#1098ad,
-		#07b39b,
-		#6fba82
-	);
-	border-radius: calc(2 * var(--borderWidth));
-	z-index: -1;
-	animation: animatedgradient 3s ease alternate infinite;
-	background-size: 300% 300%;
+    -webkit-background-clip: text;
 }
 
 @keyframes animatedgradient {
@@ -70,6 +52,42 @@
 		background-position: 0% 50%;
 	}
 }
+
+.circular:hover {
+	content: '';
+	--borderWidth: 3px;
+	border-radius: var(--borderWidth);
+	background: linear-gradient(
+		45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+	);
+	border-radius: calc(2 * var(--borderWidth));
+	z-index: -1;
+	animation: glowing 3s linear infinite;
+	background-size: 300% 300%;
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@keyframes glowing {
+	0% {
+	  background-position: 0 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0 50%;
+	}
+  }
 
 .animation-delay-1000 {
 	animation-delay: 1s;

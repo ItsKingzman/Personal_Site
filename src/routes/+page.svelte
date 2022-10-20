@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>(^_^)</title>
+	<title>\(^o^)/</title>
 </svelte:head>
 
 <Home />

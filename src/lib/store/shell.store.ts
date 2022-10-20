@@ -6,6 +6,7 @@ const routes = [
   { path: "/", name: "///", children: [] },
   { path: "/fun", name: "SPACE", children: [] },
   { path: "/about", name: "ME", children: [] },
+  { path: "/work", name: "WORK", children: [] }
 ]
 
 function init() {
