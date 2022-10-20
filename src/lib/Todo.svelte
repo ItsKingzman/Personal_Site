@@ -1,6 +1,4 @@
 <script>
-	import { comment } from 'postcss';
-	import Circle from './circle.svelte';
 	import { deleteTodo, toggleTodoCompleted } from './todoStore';
 	export let todo;
 </script>
