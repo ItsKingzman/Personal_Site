@@ -1,9 +1,74 @@
-@import "@fontsource/fira-mono";
+@import '@fontsource/fira-mono';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
+}
+
+.gradient-border {
+	content: '';
+	--borderWidth: 3px;
+	border-radius: var(--borderWidth);
+	background: linear-gradient(
+		60deg,
+		#f20019,
+		#33137a,
+		#161415,
+		#222423,
+		#0333b4,
+		#015ad5,
+		#00a6f1,
+		#97d7e9,
+		#f9f5f2,
+		#f9f5f2,
+		#fbbd00,
+		#f76d02,
+		#f20019,
+		#770e7d,
+		#222423,
+		#161415,
+		#1c2121,
+		#0333b4,
+		#015ad5,
+		#00a6f1
+	);
+	border-radius: calc(2 * var(--borderWidth));
+	z-index: -1;
+	animation: animatedgradient 3s ease alternate infinite;
+	background-size: 300% 300%;
+	-webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+.gradient-border:after {
+	content: '';
+	background: linear-gradient(
+		60deg,
+		#f79533,
+		#f37055,
+		#ef4e7b,
+		#a166ab,
+		#5073b8,
+		#1098ad,
+		#07b39b,
+		#6fba82
+	);
+	border-radius: calc(2 * var(--borderWidth));
+	z-index: -1;
+	animation: animatedgradient 3s ease alternate infinite;
+	background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .animation-delay-1000 {
@@ -117,28 +182,52 @@
 }
 
 @keyframes YtoM {
-	from { border-color: yellow; }
-	to { border-color: magenta; }
+	from {
+		border-color: yellow;
+	}
+	to {
+		border-color: magenta;
+	}
 }
 @keyframes CtoM {
-	from { border-color: cyan; }
-	to { border-color: magenta; }
+	from {
+		border-color: cyan;
+	}
+	to {
+		border-color: magenta;
+	}
 }
 
 @keyframes CtoY {
-	from { border-color: cyan; }
-	to { border-color: yellow; }
+	from {
+		border-color: cyan;
+	}
+	to {
+		border-color: yellow;
+	}
 }
 @keyframes MtoY {
-	from { border-color: magenta; }
-	to { border-color: yellow; }
+	from {
+		border-color: magenta;
+	}
+	to {
+		border-color: yellow;
+	}
 }
 
 @keyframes MtoC {
-	from { border-color: magenta; }
-	to { border-color: cyan; }
+	from {
+		border-color: magenta;
+	}
+	to {
+		border-color: cyan;
+	}
 }
 @keyframes YtoC {
-	from { border-color: yellow; }
-	to { border-color: cyan; }
+	from {
+		border-color: yellow;
+	}
+	to {
+		border-color: cyan;
+	}
 }
