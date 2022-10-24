@@ -1,13 +1,20 @@
-import { Shell } from "../../models/shell/shell.model";
+import { Shell, type Route } from "../../models/shell/shell.model";
 import { browser } from "$app/environment"
 import { writable } from "svelte/store";
+import { supabase } from "$lib/supabase";
 
-const routes = [
+const routes: Route[] = [
   { path: "/", name: "///", children: [] },
   { path: "/fun", name: "SPACE", children: [] },
   { path: "/about", name: "ME", children: [] },
-  { path: "/work", name: "WORK", children: [] }
+  { path: "/work", name: "WORK", children: [] },
+  { path: "logout", name: "Log-Out", children: [], action: () => signOut() }
 ]
+
+function signOut() {
+  console.log("SIgning out");
+  supabase.auth.signOut();
+}
 
 function init() {
   const state = new Shell();

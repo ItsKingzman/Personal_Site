@@ -1,5 +1,5 @@
 <script>
-	import { deleteTodo, toggleTodoCompleted } from './todoStore';
+	import { deleteTodo, toggleTodoCompleted } from '$lib/todoStore';
 	export let todo;
 </script>
 
@@ -7,7 +7,7 @@
 	<input
 		name="completed"
 		type="checkbox"
-        on:change={() => toggleTodoCompleted(todo.id)}
+        on:change={() => toggleTodoCompleted(todo.id, null)}
 		checked={todo.completed}
 		class="mr-2 form-checkbox h5 w-5"
 	/>

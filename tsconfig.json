@@ -8,8 +8,14 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
-		"strict": true,
+		"strict": false,
+		"noImplicitUseStrict": false,
+		"noStrictGenericChecks": false,
+		"suppressImplicitAnyIndexErrors": true,
+		"strictNullChecks": false,
+		"noImplicitReturns": false,
 		"noImplicitAny": false,
+		"useUnknownInCatchVariables": true,
 		"suppressExcessPropertyErrors": true
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias

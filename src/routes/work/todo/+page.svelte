@@ -1,7 +1,7 @@
 <script>
     import TodoForm from "$lib/TodoForm.svelte"
     import Todo from "$lib/Todo.svelte"
-    import {todos} from "$lib/todoStore.js";
+    import {todos} from "$lib/todoStore";
 </script>
 
 <main class="container mx-auto my-6 max-w-lg">

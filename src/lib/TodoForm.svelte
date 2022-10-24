@@ -1,10 +1,16 @@
 <script>
-    import {addTodo} from "./todoStore.js";
+    import {addTodo, loadTodos} from "$lib/todoStore";
+	import { onMount } from "svelte";
+
+    onMount(() => {
+        loadTodos();
+    })
     let todo = '';
     const handleSubmit = () => {
         addTodo(todo);
         todo = '';
         console.log("Submitting")
+        loadTodos();
     }
 </script>
 <form class="my-6" on:submit|preventDefault={handleSubmit}>

@@ -1,6 +1,12 @@
 <script lang="ts">
-	import { page } from "$app/stores";
-	import shell from "$lib/store/shell.store";
+	import { page } from '$app/stores';
+	import shell from '$lib/store/shell.store';
+	import { supabase } from '$lib/supabase';
+	import { user } from '$lib/store/authStore';
+
+	setTimeout(() => {
+		console.log($user);
+	}, 3000);
 </script>
 
 <header class="flex justify-between h-10 bg-black">
@@ -9,7 +15,7 @@
 			<span class="text-2xl text-yellow-50">CK&nbsp;&#8592;</span>
 		</a>
 		<!-- Light/Dark Mode toggle -->
-		{#if $shell.visual_mode === "dark"}
+		{#if $shell.visual_mode === 'dark'}
 			<span
 				title="Toggle Light Mode"
 				class="cursor-pointer select-none"
@@ -29,10 +35,16 @@
 			<!-- Generate the links -->
 			{#each $shell.routes as route}
 				<!-- If it's the home link then we check for strict equality -->
-				{#if route.path === "/"}
+				{#if route.path === '/'}
 					<li class="px-4" class:font-bold={$page.url.pathname === route.path}>
 						<a sveltekit:prefetch href={route.path}>{route.name}</a>
 					</li>
+				{:else if route.path === 'logout'}
+					{#if $user}
+						<li class="px-4 cursor-pointer" class:font-bold={$page.url.pathname === route.path}>
+							<button sveltekit:prefetch on:click={route.action}>{route.name}</button>
+						</li>
+					{/if}
 				{:else}
 					<li class="px-2" class:font-bold={$page.url.pathname.includes(route.path)}>
 						<a sveltekit:prefetch href={route.path}>{route.name}</a>
