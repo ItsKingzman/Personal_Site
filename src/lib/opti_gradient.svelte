@@ -34,7 +34,7 @@
 {#if modifier}
 	<div
 		style="filter: hue-rotate({(hue = modifier(hue))}deg)"
-		class="w-full h-8 my-1 rounded opti-gradient-01"
+		class="fixed w-full h-8 my-1 rounded opti-gradient-01"
 	/>
 {:else}
 	<div style="filter: hue-rotate({hue}deg)" class="w-full h-8 my-1 rounded opti-gradient-01" />

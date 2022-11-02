@@ -41,6 +41,36 @@
     -webkit-background-clip: text;
 }
 
+.gradient-border-2 {
+	content: '';
+	--borderWidth: 3px;
+	border-radius: var(--borderWidth);
+	background: linear-gradient(
+		60deg,
+		#ff0000,
+		#ff5e00,
+		#ce7b00,
+		#fffb00,
+		#a1ce00,
+		#48ff00,
+		#00ff15,
+		#00ffd5,
+		#00ccff,
+		#002bff,
+		#2f00ff,
+		#7a00ff,
+		#d400ff,
+		#ff00c8,
+		#ff0000
+	);
+	border-radius: calc(2 * var(--borderWidth));
+	z-index: -1;
+	animation: animatedgradient 3s ease alternate infinite;
+	background-size: 300% 300%;
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 @keyframes animatedgradient {
 	0% {
 		background-position: 0% 50%;
@@ -60,12 +90,18 @@
 	background: linear-gradient(
 		45deg,
     #ff0000,
+	#ff5e00,
     #ff7300,
     #fffb00,
+	#c8ff00,
     #48ff00,
+	#00ff15,
     #00ffd5,
+	#00ccff,
     #002bff,
+	#2f00ff,
     #7a00ff,
+	#d400ff,
     #ff00c8,
     #ff0000
 	);

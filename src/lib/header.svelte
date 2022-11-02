@@ -9,7 +9,7 @@
 	}, 3000);
 </script>
 
-<header class="flex justify-between h-10 bg-black">
+<header class="flex w-full justify-between h-10 bg-black">
 	<div class="flex items-center justify-between w-[115px] h-5 pl-2 mt-2">
 		<a href="/">
 			<span class="text-2xl text-yellow-50">CK&nbsp;&#8592;</span>

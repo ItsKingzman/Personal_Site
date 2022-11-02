@@ -14,12 +14,24 @@
 	export const prerender = true;
 </script>
 
-<div
-	class="flex items-center justify-center flex-col h-screen flex-wrap w-full whitespace-pre-line"
->
+<div class="flex items-center justify-center flex-col h-screen flex-wrap w-full whitespace-pre-line">
 	<h1>C.KING</h1>
 
-	<pre class="w-3/4 whitespace-pre-line text-center">
-		Hello, this is my personal website. And I will do with it as I please! Art projects for whatever!
-	</pre>
+	<pre class="w-3/4 whitespace-pre-line text-center">Hello, this is my personal website.<br> </pre>
+		<pre class="w-3/4 whitespace-pre-line text-center">And I will do with it as I please!<br> </pre>
+			<pre class="w-3/4 whitespace-pre-line text-center">Art projects for whatever!</pre>
 </div>
+
+
+<style>
+pre::first-letter {
+	color: rgb(0, 255, 170);
+	border-radius: 2px;
+	font-size: 175%;
+	padding: 6px 3px;
+}
+
+h1 {
+	text-decoration:underline;
+}
+</style>
