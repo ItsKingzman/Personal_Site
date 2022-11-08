@@ -18,8 +18,8 @@
 	<h1>C.KING</h1>
 
 	<pre class="w-3/4 whitespace-pre-line text-center">Hello, this is my personal website.<br> </pre>
-		<pre class="w-3/4 whitespace-pre-line text-center">And I will do with it as I please!<br> </pre>
-			<pre class="w-3/4 whitespace-pre-line text-center">Art projects for whatever!</pre>
+		<pre class="w-3/4 whitespace-pre-line text-center">This is the home for all of my personal projects.<br> </pre>
+			<pre class="w-3/4 whitespace-pre-line text-center">Feel free to take a look around!</pre>
 </div>
 
 
