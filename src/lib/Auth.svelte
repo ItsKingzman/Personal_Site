@@ -126,7 +126,7 @@
 			>
 				Sign Up
 			</button>
-			<!-- <br />
+			<br />
 			<br />
 			<button
 				type="button"
@@ -134,7 +134,7 @@
 				class="w-full shadow-sm rounded bg-blue-500 hover:bg-blue-700 text-white py-2 px-4"
 			>
 				Log In
-			</button> -->
+			</button>
 		</form>
 	{/if}
 </div>
