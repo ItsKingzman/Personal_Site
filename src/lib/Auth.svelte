@@ -42,7 +42,7 @@
 
 <div class="container mx-auto my-6 max-w-lg">
 	<h1 class="text-2xl font-bold text-center text-grey-800 md:text-3xl">Log In</h1>
-	<p class="text-center mt-2">Sign in via magic link with your email below.</p>
+	<p class="text-center mt-2">Please Sign In</p>
 
 	{#if !signUpVisible}
 		<form on:submit|preventDefault={handleLogin}>
@@ -125,7 +125,7 @@
 			>
 				Sign Up
 			</button>
-			<br />
+			<!-- <br />
 			<br />
 			<button
 				type="button"
@@ -133,7 +133,7 @@
 				class="w-full shadow-sm rounded bg-blue-500 hover:bg-blue-700 text-white py-2 px-4"
 			>
 				Log In
-			</button>
+			</button> -->
 		</form>
 	{/if}
 </div>

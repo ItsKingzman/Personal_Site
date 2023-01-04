@@ -9,10 +9,10 @@ const routes: Route[] = [
   { path: "/about", name: "ME", children: [] },
   { path: "/work", name: "WORK", children: [] },
   { path: "logout", name: "Log-Out", children: [], action: () => signOut() }
-]
+];
 
 function signOut() {
-  console.log("SIgning out");
+  console.log("Signing out");
   supabase.auth.signOut();
 }
 
@@ -20,14 +20,14 @@ function init() {
   const state = new Shell();
   state.routes = routes;
   initTheme(state);
-	const { subscribe, set, update } = writable(state);
+  const { subscribe, set, update } = writable(state);
 
-	return {
-		subscribe,
-		toggleVisialMode: () => update(s => toggleVisialMode(s)),
-		// decrement: () => update(n => n - 1),
-		// reset: () => set(0)
-	};
+  return {
+    subscribe,
+    toggleVisialMode: () => update(s => toggleVisialMode(s)),
+    // decrement: () => update(n => n - 1),
+    // reset: () => set(0)
+  };
 }
 
 const toggleVisialMode = (state: Shell) => {
