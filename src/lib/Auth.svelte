@@ -43,6 +43,7 @@
 <div class="container mx-auto my-6 max-w-lg">
 	<h1 class="text-2xl font-bold text-center text-grey-800 md:text-3xl">Log In</h1>
 	<p class="text-center mt-2">Please Sign In</p>
+	<br />
 
 	{#if !signUpVisible}
 		<form on:submit|preventDefault={handleLogin}>
