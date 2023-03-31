@@ -3,21 +3,21 @@
 	import '../app.css';
 	import Header from '$lib/header.svelte';
 	import shell from '$lib/store/shell.store';
-	import Auth from '$lib/Auth.svelte';
-	import { user } from '$lib/store/authStore';
-	import { loadTodos } from '$lib/todoStore';
+	// import Auth from '$lib/Auth.svelte';
+	// import { user } from '$lib/store/authStore';
+	// import { loadTodos } from '$lib/todoStore';
 
-	supabase.auth.getUser().then((u) => {
-		user.set(u.data.user);
-	});
+	// supabase.auth.getUser().then((u) => {
+	// 	user.set(u.data.user);
+	// });
 
-	supabase.auth.onAuthStateChange((_, session) => {
-		// @ts-ignore
-		user.set(session?.user);
-		if (session?.user) {
-			loadTodos();
-		}
-	});
+	// supabase.auth.onAuthStateChange((_, session) => {
+	// 	// @ts-ignore
+	// 	user.set(session?.user);
+	// 	if (session?.user) {
+	// 		loadTodos();
+	// 	}
+	// });
 </script>
 
 <Header />
@@ -37,11 +37,11 @@
 					&#8595;
 				</div>
 				<main class="w-full">
-					{#if $user}
+					<!-- {#if $user} -->
 						<slot />
-					{:else}
+					<!-- {:else}
 						<Auth />
-					{/if}
+					{/if} -->
 				</main>
 				<div class="flex flex-col items-center justify-center text-2xl">
 					&#8593;
